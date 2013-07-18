@@ -6,11 +6,11 @@ $value = $_GET['value'];
 
 try {
 
-    $objDb = new PDO('mysql:host=localhost;dbname=health', 'root', 'jaimatadi.');
+    $objDb = new PDO('mysql:host=localhost;dbname=AnAnt', 'AnAnt', 'AnAnt');
     $objDb->exec('SET CHARACTER SET utf8');
 
     $sql = "SELECT DISTINCT District 
-            FROM `DATA09`
+            FROM `DATA12`
             WHERE `State`=?";
     $statement = $objDb->prepare($sql);
     $statement->execute(array($value));
@@ -21,7 +21,7 @@ try {
         $out = array('<option value="">Select District</option>');
 
         foreach($list as $row) {
-            $out[] = '<option value="'.$row['id'].'">'.$row['District'].'</option>';
+            $out[] = '<option value="'.$row['District'].'">'.$row['District'].'</option>';
         }
 
         echo json_encode(array('error' => false, 'list' => implode('', $out)));
