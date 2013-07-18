@@ -9,7 +9,14 @@
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width">
 
+<<<<<<< HEAD
 	
+=======
+$host = mysqli_connect("localhost","root","12345","health");
+if(mysqli_connect_errno($host)){
+    echo "not connected to database";
+}
+>>>>>>> eb90e405a88d337921d0a6c40c340b5b598fc4ec
 
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css">
@@ -21,6 +28,7 @@
 		
     </head>
 
+<<<<<<< HEAD
 
 <body data-spy="scroll" data-target=".navbar">
 
@@ -35,6 +43,33 @@
                 </div>
             </div>
         </header>
+=======
+$val1 = $_POST['state'];
+$val2 = $_POST['district'];
+echo "<br>";
+echo "The Selected State is " . $val1;
+echo "<br>";
+echo "The Selected District is " . $val2;
+echo "<br>";
+echo "The Contamination in the different Villages of the district " . $val2 . " of state " . $val1 . " is shown below.";
+
+$result = mysqli_query($host, "SELECT * FROM `DATA12` where District = '$val2'");
+echo "<table border='1'>
+	<tr>
+	    <th>Village</th>
+	    <th>Contamination</th>
+	</tr>";
+while($row = mysqli_fetch_array($result))
+{
+    echo "<tr>";
+    echo "<td>" . $row[Village]; . "</td>";
+    echo "<td>" . $row[Contamination] . "</td>";
+    echo "</tr>";
+}
+
+echo "</table>";
+
+>>>>>>> eb90e405a88d337921d0a6c40c340b5b598fc4ec
 
 
 

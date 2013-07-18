@@ -114,7 +114,11 @@
 			<script src="http://code.jquery.com/jquery-1.9.1.js"></script>	
 			<script src="ajax.js" type="text/javascript"></script>
 		    </div>
+<<<<<<< HEAD
 		    <div id="map-canvas">
+=======
+		    <div>
+>>>>>>> eb90e405a88d337921d0a6c40c340b5b598fc4ec
 			
 			<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBABGScJQIfCPdEHscp_YPmr79uAtdYU-k&sensor=false&region=IN"></script>
 			<script src="mapscript.js"

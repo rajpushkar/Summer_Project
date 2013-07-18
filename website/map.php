@@ -73,7 +73,11 @@ get_marker(28.00, 80.00);
 
 
   <?php
+<<<<<<< HEAD
 	$host = mysqli_connect("localhost", "AnAnt", "AnAnt", "AnAnt");
+=======
+	$host = mysqli_connect("localhost", "root", "12345", "health");
+>>>>>>> eb90e405a88d337921d0a6c40c340b5b598fc4ec
 	if(mysqli_connect_errno($host)) {
 	    echo "Not connected to database";
 	} else {

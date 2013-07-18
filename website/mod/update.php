@@ -6,7 +6,11 @@ $value = $_GET['value'];
 
 try {
 
+<<<<<<< HEAD
     $objDb = new PDO('mysql:host=localhost;dbname=AnAnt', 'AnAnt', 'AnAnt');
+=======
+    $objDb = new PDO('mysql:host=localhost;dbname=health', 'root', '12345');
+>>>>>>> eb90e405a88d337921d0a6c40c340b5b598fc4ec
     $objDb->exec('SET CHARACTER SET utf8');
 
     $sql = "SELECT DISTINCT District 
