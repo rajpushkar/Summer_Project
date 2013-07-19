@@ -10,7 +10,7 @@
       html, body, #map-canvas {
         margin: 0;
         padding: 0;
-        height: 90%;
+        height: 100%;
       }
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBABGScJQIfCPdEHscp_YPmr79uAtdYU-k&sensor=false&region=IN"></script>
@@ -18,7 +18,7 @@
 var map;
 function initialize() {
   var mapOptions = {
-    zoom: 5,
+    zoom: 4,
     center: new google.maps.LatLng(27, 75),
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
@@ -65,19 +65,13 @@ google.maps.event.addListener(marker, 'click', function() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 codeAddress('RAJASTHAN');
-
-get_marker(28.00, 80.00);
     </script>
   </head>
   <body>
 
 
-  <?php
-<<<<<<< HEAD
+   <?php
 	$host = mysqli_connect("localhost", "AnAnt", "AnAnt", "AnAnt");
-=======
-	$host = mysqli_connect("localhost", "root", "12345", "health");
->>>>>>> eb90e405a88d337921d0a6c40c340b5b598fc4ec
 	if(mysqli_connect_errno($host)) {
 	    echo "Not connected to database";
 	} else {
@@ -85,7 +79,7 @@ get_marker(28.00, 80.00);
 	}
 
 	
-	$result = mysqli_query($host, "SELECT DISTINCT State FROM `DATA12` LIMIT 0,10");
+	$result = mysqli_query($host, "SELECT DISTINCT State FROM DATA12 LIMIT 0,12");
 	 
 	while($row = mysqli_fetch_array($result))
 

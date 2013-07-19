@@ -94,17 +94,12 @@
 			    </form>
 			    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>	
 			    <script src="ajax.js" type="text/javascript"></script>
-		                       
-			</div>
+		     </div>
 
 
-	<div>
-	    <img src="themes/images/india.jpg">                            
-	</div>
-			
-
-
-		    </div>
+		
+	   <!-- <iframe src="map.php" height="500" width="700" ></iframe>  -->
+		</div>
 		</div>
 	    </div>
 	
@@ -134,25 +129,23 @@
                 <div class="wrapper">
                     <h1 class="the-head">Feedback</h1>
 						<div class="row-fluid">
-                        <div class="span6 offset4">
-                            <form class="contact-form" action="feedback.php" method="post">
+                        <div class="span4 offset4">
+                        <h3>Enter Your Feedback</h3>
+                            <form class="contact-form" action="feedback.php">
 
                                 <fieldset>
                                     <div class="control-group">
                                         <label for="name">Your Name</label>
-                                        <input type="text" class="input-xlarge" name="name" id="name">
+                                        <input type="text" class="input-xlarge" name="name" id="name" required="true">
                                     </div>
-                                    <div class="control-group">
-                                            <label for="phone">Phone</label>
-                                            <input type="text" class="input-xlarge" name="phone" id="phone">
-                                    </div>
+                                    
                                     <div class="control-group">
                                             <label for="email">Email Address</label>
-                                            <input type="email" class="input-xlarge" name="email" id="email">
+                                            <input type="email" class="input-xlarge" name="email" id="email" required="true">
                                     </div>
                                     <div class="control-group">
                                             <label for="message">Your Message</label>
-                                            <textarea class="input-xlarge" name="message" id="message" rows="3"></textarea>
+                                            <textarea class="input-xlarge" name="message" id="message" rows="3" required="true"></textarea>
                                     </div>
                                     <div class="control-group">
                                         <button type="submit" class="btn btn-large btn-chunkfive">Send Message</button>
@@ -160,6 +153,34 @@
                                 </fieldset>
                             </form>
 						</div>
+						
+					<!--	<div class="offset7">
+						<h3>Track Your Feedback</h3>
+                            <form class="contact-form" action="track.php">
+
+                                <fieldset>
+                                		<div class="control-group">
+                                            <label for="feedback">Feedback ID</label>
+                                            <input type="text" class="input-xlarge" name="feedback" id="id" required="true">
+                                    </div>
+                                    <div class="control-group">
+                                        <label for="name">Your Name</label>
+                                        <input type="text" class="input-xlarge" name="name" id="name" required="true">
+                                    </div>
+                                    
+                                    <div class="control-group">
+                                            <label for="email">Email Address</label>
+                                            <input type="email" class="input-xlarge" name="email" id="email" required="true">
+                                    </div>
+                                    
+                                    <div class="control-group">
+                                        <button type="submit" class="btn btn-large btn-chunkfive">Track</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+						</div>	-->					
+						
+						
 						</div>
 
             
