@@ -12,7 +12,7 @@
     		$message = $_POST['message'];
 
     		
-    		$sql = "INSERT INTO Feedback (Name, Phone, Email, Message) VALUES ('$name', '$phone', '$email', '$message')";
+    		$sql = "INSERT INTO Feedback (Name, Phone, Email, Message) VALUES ($name, $phone, $email, $message)";
     		$result = mysqli_query($host, $sql);
     		
     		

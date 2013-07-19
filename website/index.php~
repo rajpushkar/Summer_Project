@@ -135,7 +135,7 @@
                     <h1 class="the-head">Feedback</h1>
 						<div class="row-fluid">
                         <div class="span6 offset3">
-                            <form class="contact-form" action="">
+                            <form class="contact-form" action="feedback.php" method="post">
 
                                 <fieldset>
                                     <div class="control-group">
@@ -185,14 +185,14 @@
 
                             <div class="frame effects" id="the-portfolio">
                                 <ul class="clearfix">
-                                    <li><img src="themes/images/water1.jpg" alt=""></li>
-                                    <li><img src="themes/images/water2.jpg" alt=""></li>
-                                    <li><img src="themes/images/water3.jpg" alt=""></li>
-                                    <li><img src="themes/images/water4.jpg" alt=""></li>
-                                    <li><img src="themes/images/water5.jpg" alt=""></li>
-                                    <li><img src="themes/images/water6.jpg" alt=""></li>
-                                    <li><img src="themes/images/water7.jpg" alt=""></li>
-                                    <li><img src="themes/images/water8.jpg" alt=""></li>
+                                    <li><img src="themes/images/food1.png" alt=""></li>
+                                    <li><img src="themes/images/food2.png" alt=""></li>
+                                    <li><img src="themes/images/food3.png" alt=""></li>
+                                    <li><img src="themes/images/food4.png" alt=""></li>
+                                    <li><img src="themes/images/food5.png" alt=""></li>
+                                    <li><img src="themes/images/food6.png" alt=""></li>
+                                    <li><img src="themes/images/food7.png" alt=""></li>
+                                    <li><img src="themes/images/food8.png" alt=""></li>
                                 </ul>
                             </div>
 

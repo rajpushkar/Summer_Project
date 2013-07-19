@@ -134,8 +134,8 @@
                 <div class="wrapper">
                     <h1 class="the-head">Feedback</h1>
 						<div class="row-fluid">
-                        <div class="span6 offset3">
-                            <form class="contact-form" action="">
+                        <div class="span6 offset4">
+                            <form class="contact-form" action="feedback.php" method="post">
 
                                 <fieldset>
                                     <div class="control-group">
