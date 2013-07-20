@@ -79,7 +79,7 @@ codeAddress('RAJASTHAN');
 	}
 
 	
-	$result = mysqli_query($host, "SELECT DISTINCT State FROM DATA12 LIMIT 0,12");
+	$result = mysqli_query($host, "SELECT DISTINCT State FROM DATA12 LIMIT 0,10");
 	 
 	while($row = mysqli_fetch_array($result))
 

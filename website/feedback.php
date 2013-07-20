@@ -10,7 +10,7 @@
 <body>
 
 <?php
-    $host=mysqli_connect("localhost","root","12345","Feedback");
+    $host=mysqli_connect("localhost","AnAnt","AnAnt","AnAnt");
     if(mysqli_connect_errno($host)){
 		echo "<div class='modal' id='myModal'>
 									<div class='modal-header'>
@@ -38,7 +38,7 @@
     		$sql = "INSERT INTO Feedback (Name, Email, Message) VALUES ('$name', '$email', '$message')";
     		$result = mysqli_query($host, $sql);
     		
-    		 		
+    		
 
 		echo '<div class="modal" id="myModal">
 									<div class="modal-header">
@@ -62,7 +62,7 @@
 
 
 								
-</body>
+								</body>
 								
 								<script type="text/javascript" >
 $(document).ready(function(e)

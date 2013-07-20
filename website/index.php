@@ -21,7 +21,8 @@
 	<link rel="stylesheet" href="themes/css/custom-responsive.css">
 		
     </head>
-    <body data-spy="scroll" data-target=".navbar">
+  <body data-spy="scroll" data-target=".navbar">
+  
         <header>
             <div class="container">
                 <div class="navbar">
@@ -37,7 +38,7 @@
                                 <ul class="nav">
                                     <li class="active">
                                         <a href="#home">Home</a>
-                                    </li>
+                                    </li>                                    
                                     <li class="">
                                         <a href="#about">About Us</a>
                                     </li>
@@ -45,7 +46,7 @@
                                         <a href="#feedback">Feedback</a>
                                     </li>
                                     <li class="">
-                                        <a href="#ourwater">Our Water Our Condition</a>
+                                        <a href="#gallery">Gallery</a>
                                     </li>
                                     <li class="">
                                         <a href="#follow">Follow Us</a>
@@ -54,7 +55,7 @@
                 </div>
             </div>
         </header>
-       
+
         
     <section id="home" class="fill">
 	<div class="container">
@@ -73,10 +74,31 @@
 			    echo 'There was a problem';
 			    }
 		    ?>
+        <script src="min.js" type="text/javascript"></script>    
+       <script>
+	   $(document).ready(function(e) {
+	   	$('#result').hide();
+		   $('#done').click(function(e) {
+			
+            var state=$('#state').val();
+			var district=$('#district').val();
+			if(state!="" && district!="")
+			{
+				
+			var cl=state+':'+district;
+			$('#result').show();
+		$.get("result.php?cl="+cl, function(data){
+      $('#display').html(data);
+      
+    });
+    	$(document).scrollTo('#result', {duration:1000});
+			}
+        });
 
+    });
+	   </script>
 		   
 		        <div class="span2" align="left">
-			    <form action="result.php" method="post">
 			        <select name="state" id="state" class="update">
 		  		    <option value="">Select State</option>
 				        <?php if (!empty($list)) { ?>
@@ -90,19 +112,27 @@
 			        <select name="district" id="district" class="update">
 				<option value="">Select District</option>
 			        </select>
-			        <button type="submit">Submit</button>
-			    </form>
+			        <input type="submit" id="done" value="Submit">
 			    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>	
 			    <script src="ajax.js" type="text/javascript"></script>
 		     </div>
 
-
 		
-	   <!-- <iframe src="map.php" height="500" width="700" ></iframe>  -->
+		
+	    <iframe src="map.php" height="500" width="700" ></iframe>
 		</div>
 		</div>
 	    </div>
-	
+	</section>	
+	<section id="result" claass="fill">
+			<div class="container">
+	    		<div class="wrapper">
+	    			<h1 class="the-head">Result</h1>
+					<div class="row-fluid">
+						<div id="display"></div>
+					</div>
+				</div>
+			</div>	
     </section>
     <section id="about" class="fill">
 	<div class="container">
@@ -136,16 +166,16 @@
                                 <fieldset>
                                     <div class="control-group">
                                         <label for="name">Your Name</label>
-                                        <input type="text" class="input-xlarge" name="name" id="name" required="true">
+                                        <input type="text" class="input-xlarge" name="name" id="name" required>
                                     </div>
                                     
                                     <div class="control-group">
                                             <label for="email">Email Address</label>
-                                            <input type="email" class="input-xlarge" name="email" id="email" required="true">
+                                            <input type="email" class="input-xlarge" name="email" id="email" required>
                                     </div>
                                     <div class="control-group">
                                             <label for="message">Your Message</label>
-                                            <textarea class="input-xlarge" name="message" id="message" rows="3" required="true"></textarea>
+                                            <textarea class="input-xlarge" name="message" id="message" rows="3" required></textarea>
                                     </div>
                                     <div class="control-group">
                                         <button type="submit" class="btn btn-large btn-chunkfive">Send Message</button>
@@ -191,10 +221,10 @@
         </section>
         
 
-        <section id="ourwater" class="fill">
+        <section id="gallery" class="fill">
             <div class="container">
                 <div class="wrapper">
-                    <h1 class="the-head">OUR WATER OUR CONDITION</h1>
+                    <h1 class="the-head">GALLERY</h1>
                     
                     <div class="row-fluid">
                         <div class="span12">
@@ -252,7 +282,6 @@
 
         <a href="#" class="go-top" style="display: none;"><i class="icon-double-angle-up"></i></a>
         
-        <script src="themes/js/jquery-1.9.1.min.js"></script>
         <script src="themes/js/bootstrap.min.js"></script>
         <script src="themes/js/bootstrap-scrollspy.js"></script>
         <script src="themes/js/jquery.easing-1.3.min.js"></script>
@@ -260,7 +289,7 @@
         <script src="themes/js/jquery.vegas.js"></script>
         <script src="themes/js/sly.min.js"></script>
         <script src="themes/js/jquery.prettyPhoto.js"></script>
-
+		  
         <script src="themes/js/main.js"></script>
         
     
