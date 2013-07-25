@@ -11,7 +11,7 @@ try {
 
     $sql = "SELECT DISTINCT District 
             FROM `DATA12`
-            WHERE `State`=?";
+            WHERE `State`=? ORDER BY District";
     $statement = $objDb->prepare($sql);
     $statement->execute(array($value));
     $list = $statement->fetchAll(PDO::FETCH_ASSOC);
