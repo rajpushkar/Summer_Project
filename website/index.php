@@ -10,7 +10,9 @@
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width">
 
-	
+	<style>
+		iframe, object, embed{max-width: 100%;}
+	</style>
 
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css">
@@ -116,10 +118,9 @@
 			    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>	
 			    <script src="ajax.js" type="text/javascript"></script>
 		     </div>
-
-		
-		
-	    <iframe src="map.php" height="500" width="700" ></iframe>
+			<div class="offset3">
+				<iframe src="map.php" height="500" width="100%" ></iframe>
+			</div>
 		</div>
 		</div>
 	    </div>
