@@ -947,6 +947,10 @@
   .carousel-caption {
     position: static;
   }
+
+  .offset3{
+	margin-left:0;
+}
 }
 
 @media (max-width: 979px) {

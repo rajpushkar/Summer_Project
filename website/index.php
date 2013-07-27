@@ -21,9 +21,27 @@
 	<link rel="stylesheet" href="themes/css/prettyPhoto.css">
 	<link rel="stylesheet" href="themes/css/style.css">
 	<link rel="stylesheet" href="themes/css/custom-responsive.css">
+
+
+
+	<script type="text/javascript">
+	    function validateForm(){
+var email = document.getElementById('email');
+var emailExp = \b[A-Z0-9\._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b;
+
+ if(!email.value.match(emailExp)){				
+   alert("Pehle Email Daal Salle");
+   email.focus();
+   return false;
+ }
+}        
+    </script>
+
+
+
 		
     </head>
-  <body data-spy="scroll" data-target=".navbar">
+  <body  data-target=".navbar">
   
         <header>
             <div class="container">
@@ -56,6 +74,8 @@
                     </div>
                 </div>
             </div>
+          </div>
+         </div>
         </header>
 
         
@@ -119,7 +139,7 @@
 			    <script src="ajax.js" type="text/javascript"></script>
 		     </div>
 			<div class="offset3">
-				<iframe src="map.php" height="500" width="100%" ></iframe>
+				<iframe id="iframe" src="map.php" height="500px" width="100%" ></iframe>
 			</div>
 		</div>
 		</div>
@@ -162,7 +182,7 @@
 						<div class="row-fluid">
                         <div class="span4 offset4">
                         <h3>Enter Your Feedback</h3>
-                            <form class="contact-form" action="feedback.php">
+                            <form onsubmit="return formValidator()" class="contact-form" action="feedback.php">
 
                                 <fieldset>
                                     <div class="control-group">
@@ -172,7 +192,7 @@
                                     
                                     <div class="control-group">
                                             <label for="email">Email Address</label>
-                                            <input type="email" class="input-xlarge" name="email" id="email" required>
+                                            <input  class="input-xlarge" name="email" id="email" required>
                                     </div>
                                     <div class="control-group">
                                             <label for="message">Your Message</label>
@@ -290,9 +310,8 @@
         <script src="themes/js/jquery.vegas.js"></script>
         <script src="themes/js/sly.min.js"></script>
         <script src="themes/js/jquery.prettyPhoto.js"></script>
-		  
-        <script src="themes/js/main.js"></script>
-        
-    
-
+	<script src="themes/js/main.js"></script>
+	<script src="validate.js" type="text/javascript"></script>
+	
+	
 </body></html>

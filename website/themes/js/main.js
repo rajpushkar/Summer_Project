@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	// Apply Bootstrap Scrollspy to show active navigation link based on page scrolling
-	$('.navbar').scrollspy();
-    
+	$('.navbar').scrollspy();		
+    	
     // Scroll page with easing effect
     $('.navbar ul li a').bind('click', function(e) {
         e.preventDefault();
@@ -57,7 +57,7 @@ $(document).ready(function() {
             {src : 'themes/images/food6.png', fade: 2000}
 
         ]
-    })('overlay');
+    })('overlay'); 
 
 
     // Apply Card scrolling effect on Portfolio

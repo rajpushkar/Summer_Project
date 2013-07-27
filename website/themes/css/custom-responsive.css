@@ -125,6 +125,10 @@
 	.nav-collapse .nav li a{
 		font-size: 12px; padding:5px 7px; font-weight: normal;
 	}
+.offset3 {
+    margin-left: 0;
+    display:block;
+  }
 
 	#home h1 {
 		font-size: 33px;
