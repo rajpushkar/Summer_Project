@@ -291,7 +291,6 @@ var emailExp = \b[A-Z0-9\._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b;
                                     <li><a href="https://www.facebook.com/rajpushkar" target="_blank"><i class="icon-facebook-sign"></i></a></li>
                                     <li><a href="https://www.twitter.com/rajpushkar91" target="_blank"><i class="icon-twitter-sign"></i></a></li>
                                     <li><a href="https://plus.google.com/109330531394685916400" target="_blank"><i class="icon-google-plus-sign"></i></a></li>
-				    <li><a href="https://www.github.com/rajpushkar/Summer_Project.git" target="_blank"><i class="icon-github-sign"></i></a></li>
                                 </ul>
                             </div>
                       
