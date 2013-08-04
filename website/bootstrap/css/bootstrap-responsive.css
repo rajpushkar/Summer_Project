@@ -882,13 +882,19 @@
     margin-left: 0;
   }
   .modal {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    left: 20px;
-    width: auto;
-    margin: 0;
-  }
+position: fixed;
+top: 3%;
+right: 3%;
+left: 3%;
+bottom: 3%;
+width: auto;
+margin: 0;
+}
+.modal-body {
+height: 60%;
+}
+
+
   .modal.fade {
     top: -100px;
   }

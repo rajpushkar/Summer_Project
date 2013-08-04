@@ -5241,6 +5241,7 @@ input[type="submit"].btn.btn-mini {
   max-height: 400px;
   padding: 15px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .modal-form {
